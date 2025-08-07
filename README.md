@@ -29,6 +29,9 @@ public class MyService extends BaseInstanceable<MyService> {
     private MyService() {
     // Initialization logic
     }
+
+    public static MyService getInstance() {
+        return BaseInstanceable.getInstance(MyService.class);
     }
 
     public void doSomething() {
